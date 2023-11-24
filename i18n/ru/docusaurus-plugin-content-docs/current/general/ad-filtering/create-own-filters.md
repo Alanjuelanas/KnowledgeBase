@@ -1124,7 +1124,7 @@ Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuar
 
 | Модификатор \ Продукты                     | [Приложения CoreLibs][cl-apps] | [AdGuard для Chromium][ext-chr] | [AdGuard для Firefox][ext-ff] | [AdGuard для iOS][ios-app] | [AdGuard для Safari][ext-saf] | [AdGuard Content Blocker][and-cb] |
 | ------------------------------------------- |:------------------------------:|:-------------------------------:|:-----------------------------:|:--------------------------:|:-----------------------------:|:---------------------------------:|
-| [$all](#all-modifier)                       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
+| [$all](#all-modifier)                       |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$badfilter](#badfilter-modifier)           |               ✅                |                ✅                |               ✅               |             ✅              |               ✅               |                 ❌                 |
 | [$cookie](#cookie-modifier)                 |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
 | [$csp](#csp-modifier)                       |               ✅                |                ✅                |               ✅               |             ❌              |               ❌               |                 ❌                 |
@@ -1163,6 +1163,12 @@ Rules with `$specifichide` modifier are not supported by AdGuard for iOS, AdGuar
 ```
 
 Этот модификатор нельзя использовать как исключение с маркером `@@`.
+
+:::info Совместимость
+
+Rules with `$all` modifier are not supported by AdGuard Content Blocker.
+
+:::
 
 #### **`$badfilter`** {#badfilter-modifier}
 
